@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập thêm JS_4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <div class="bai1 container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              Bài 1. Xác định ngày trước và ngày sau
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập ngày</label>
+                <input
+                  id="txtday_1"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <label for="">Nhập tháng</label>
+                <input
+                  id="txtmonth_1"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <label for="">Nhập năm</label>
+                <input
+                  id="txtyear_1"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+              </div>
+              <button id="prev-next-date" class="btn btn-danger">
+                Ngày sau và trước
+              </button>
+            </div>
+            <div id="footer_date-result" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Bài 2 -->
+    <div class="bai2 container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Bài 2.Số ngày của tháng</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập tháng</label>
+                <input
+                  id="txtmonth_2"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <label for="">Nhập năm</label>
+                <input
+                  id="txtyear_2"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+              </div>
+              <button id="count_date" class="btn btn-danger">
+                Đếm số ngày
+              </button>
+            </div>
+            <div
+              id="footer_date-count-result"
+              class="card-footer text-muted"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Bài 3 -->
+    <div class="bai3 container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Bài 3. Cách đọc số có ba chữ số</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập số có ba chữ số</label>
+                <input
+                  id="txtnumber"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+              </div>
+              <button id="name_number" class="btn btn-danger">Cách đọc</button>
+            </div>
+            <div id="footer_name-result" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Bài 4 -->
+    <div class="bai4 container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Bài 4. Tìm SV xa trường (toạ độ Oxy)</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập tên của SV1:</label>
+                <input
+                  id="txtstudent_1"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                  value="A"
+                />
+                <label for="">Toạ độ nhà SV1 theo trục X:</label>
+                <input
+                  id="txtx1"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  value="10"
+                  placeholder="ví dụ:10,12,...."
+                />
+                <label for="">Toạ độ nhà SV1 theo trục Y:</label>
+                <input
+                  id="txty1"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  value="10"
+                  placeholder="ví dụ:10,12,...."
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập tên của SV2:</label>
+                <input
+                  id="txtstudent_2"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                  value="B"
+                />
+                <label for="">Toạ độ nhà SV2 theo trục X:</label>
+                <input
+                  id="txtx2"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder="ví dụ:10,12,...."
+                  value="20"
+                />
+                <label for="">Toạ độ nhà SV2 theo trục Y:</label>
+                <input
+                  id="txty2"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder="ví dụ:10,12,...."
+                  value="25"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập tên của SV3:</label>
+                <input
+                  id="txtstudent_3"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder=""
+                  value="C"
+                />
+                <label for="">Toạ độ nhà SV3 theo trục X:</label>
+                <input
+                  id="txtx3"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder="ví dụ:10,12,...."
+                  value="15"
+                />
+                <label for="">Toạ độ nhà SV3 theo trục Y:</label>
+                <input
+                  id="txty3"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder="ví dụ:10,12,...."
+                  value="35"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Toạ độ của trường theo trục X:</label>
+                <input
+                  id="txtx_school"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder="ví dụ:10,12,...."
+                  value="30"
+                />
+                <label for="">Toạ độ của trường theo trục Y:</label>
+                <input
+                  id="txty_school"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="helpId"
+                  placeholder="ví dụ:10,12,...."
+                  value="15"
+                />
+              </div>
+              <button id="furthest_student" class="btn btn-danger">
+                Tìm SV xa trường nhất
+              </button>
+            </div>
+            <div
+              id="footer_student-result"
+              class="card-footer text-muted"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
